@@ -76,6 +76,29 @@ stry_fifteenth_ind = str_y[15]
 print("fifteenth index value of a stry is {}".format(stry_fifteenth_ind))
 
 
+# slicing
+Str_y = "welcome to class"
+ind0_to_ind4 = str_y[0:4]
+print("the value of string from zero to fourth index is {}".format(ind0_to_ind4))
+ind1_to_ind5 = str_y[1:5]
+print("the value of string from one to fifth index is {}".format(ind1_to_ind5))
+ind0_to_ind3 = str_y[0:3]
+print("the value of string from zero to third index is {}".format(ind0_to_ind3))
+ind2_to_ind8 = str_y[2:8]
+print("the value of string from second to eight index is {}".format(ind2_to_ind8))
+ind0_to_ind15 = str_y[0:15]
+print("the value of string from zero to fifteen index is {}".format(ind0_to_ind15))
+
+# slicing with step size
+str_z = "welcome"
+len_strz = len(str_z)
+print(len_strz)
+slc_with_step2 = str_z[0:7:2]           # the length of the strz is 7
+print("the value of slicing str z with step size 2 is {}".format(slc_with_step2))
+slc_with_step3 = str_z[0:7:3]
+print("the value of slicing str z with step 3 is {}".format(slc_with_step3))
+
+
 
 
 

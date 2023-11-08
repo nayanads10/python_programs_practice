@@ -99,7 +99,29 @@ slc_with_step3 = str_z[0:7:3]
 print("the value of slicing str z with step 3 is {}".format(slc_with_step3))
 
 
+# slicing all from right to left
+ind3_to_all = str_z[3:]
+print("value from 3rd index to all is {}".format(ind3_to_all))
+ind1_to_all = str_z[1:]
+print("value from 1st index to all is {}".format(ind1_to_all))
+till_ind5 = str_z[:5]
+print("value till 5th index is {}".format(till_ind5))
+till_ind3 = str_z[:3]
+print("value till 3rd index is {}".format(till_ind3))
 
-
+# reverse indexing
+str_c = "python"
+ind1_neg = str_c[-1]
+print("value of negative index one is {}".format(ind1_neg))
+ind2_neg = str_c[-2]
+print("value of negative index two is {}".format(ind2_neg))
+ind3_neg = str_c[-3]
+print("value of negative index three is {}".format(ind3_neg))
+ind4_neg = str_c[-4]
+print("value of negative index four is {}".format(ind4_neg))
+ind5_neg = str_c[-5]
+print("value of negative index five is {}".format(ind5_neg))
+ind6_neg = str_c[-6]
+print("value of negative index six is {}".format(ind6_neg))
 
 

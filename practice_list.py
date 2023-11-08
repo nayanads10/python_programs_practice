@@ -68,7 +68,9 @@ print("the lst_y after extending is {}".format(lst_y))
 lst_y.extend([["3","4"]])
 print("the lst_y after extending is {}".format(lst_y))
 
-lst_c = ["abc","789","box","1"]
+
+
+lst_c = ["#abc",789,"box","1","9"]
 len_lstc = len(lst_c)
 print("the length of list is {}".format(len_lstc))
 
@@ -81,6 +83,8 @@ ind_lstc = lst_c[2]
 print("the second index of lst_c is {}".format(ind_lstc))
 ind_lstc = lst_c[3]
 print("the third index of lst_c is {}".format(ind_lstc))
+ind_lstc = lst_c[4]
+print("the fourth index of lst_c is {}".format(ind_lstc))
 
 # to print x from box which as item of lst_c
 lst_box = lst_c[2]
@@ -100,3 +104,24 @@ lst_c.extend(["a","b"])
 print("the value of lst_c after extend is {}".format(lst_c))
 lst_c.extend([["1","2"]])
 print("the value of lst_c after extend is {}".format(lst_c))
+
+
+# slicing
+lst_d = ["#abc",789,"box","1","9"]
+ind0_to_ind4 = lst_d[0:4]
+print("the value of list from zero to fourth index is {}".format(ind0_to_ind4))
+ind1_to_ind3 = lst_d[1:3]
+print("the value of list from first to third index is {}".format(ind1_to_ind3))
+
+# slicing with step size
+lst_d = ["#abc",789,"box","1","9","4","3"]
+len_lstd = len(lst_d)
+print(len_lstd)
+slc_with_stp2 = lst_d[0:7:2]
+print("the value of list str d with step size 2 is {}".format(slc_with_stp2))
+slc_with_stp4 = lst_d[0:7:4]
+print("the value of list str d with step 4 is {}".format(slc_with_stp4))
+slc_with_stp3 = lst_d[0:7:3]
+print("the value of list str d with step 3 is {}".format(slc_with_stp3))
+
+

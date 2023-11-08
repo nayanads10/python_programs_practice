@@ -49,3 +49,37 @@ ind_tpl_a = tpl_a[2]
 print("second element of tuple a is {}".format(ind_tpl_a))
 ind_tpl_a = tpl_a[3]
 print("third element of tuple a is {}".format(ind_tpl_a))
+
+# indexing
+tpl_z = (1,2,"home","c","d")
+ind_tpl_z = tpl_z[0]
+print("zeroeth element of tuple z is {}".format(ind_tpl_z))
+ind_tpl_z = tpl_z[1]
+print("first element of tuple z is {}".format(ind_tpl_z))
+ind_tpl_z = tpl_z[2]
+print("second element of tuple z is {}".format(ind_tpl_z))
+ind_tpl_z = tpl_z[3]
+print("third element of tuple z is {}".format(ind_tpl_z))
+ind_tpl_z = tpl_z[4]
+print("fourth element of tuple z is {}".format(ind_tpl_z))
+
+# slicing
+tpl_y = (1,2,"home","c","d","f")
+ind0_to_ind4 = tpl_y[0:4]
+print("the value of tuple from zero to fourth is {}".format(ind0_to_ind4))
+ind1_to_ind6 = tpl_y[1:6]
+print("the value of tuple from one to sixth is {}".format(ind1_to_ind6))
+ind3_to_ind5 = tpl_y[3:5]
+print('the value of tuple from three to five is {}'.format(ind3_to_ind5))
+
+# slicing with step size
+len_tply = len(tpl_y)
+print(len_tply)
+print("the length of tuple y is {}".format(len_tply))
+slc_with_stp2 = tpl_y[0:6:2]
+print("the value of slicing tpl y with step 2 is {}".format(slc_with_stp2))
+slc_with_stp3 = tpl_y[0:6:3]
+print("the value of slicing tpl y with step 3 is {}".format(slc_with_stp3))
+
+
+

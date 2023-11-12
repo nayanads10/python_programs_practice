@@ -125,3 +125,89 @@ ind6_neg = str_c[-6]
 print("value of negative index six is {}".format(ind6_neg))
 
 
+
+# string concatination
+str1 = "welcome"
+str2 = "john"
+str_res = str1+" "+str2
+print("value after concatinating is {}".format(str_res))
+str3 = "welcome"
+str4 = "to"
+str5 = "python"
+str6 = "class"
+str_res = str3+" "+str4+" "+str5+" "+str6
+print("value after concatinating is {}".format(str_res))
+
+# capitalize - it will capitalize first character of string
+stra_a = "python"
+a = str_a.capitalize()
+print("value after capitalizing string is {}".format(a))
+
+# upper case - it converts complete characters in a string into upper case
+upp_case = str_a.upper()
+print("upper case values are {}".format(upp_case))
+
+
+# lower case - it converts complete characters in a string into lower case
+str_b = "WELCOME"
+low_case = str_b.lower()
+print("lower case values are {}".format(low_case))
+str_c = "HoneY"
+low_case = str_c.lower()
+print("lower case values are {}".format(low_case))
+# upper case
+upp_case = str_c.upper()
+print("upper case values are {}".format(upp_case))
+
+str_c = "hello"
+res = str_c[0:2]+str_c[2:4].upper()+str_c[-1]
+print("value after capitalizing only 1 is {}".format(res))
+str_d = "sweethome"
+res = str_d[0:3]+str_d[3:7].upper()+str_d[-1]
+print("value after capitalizing only 1 is {}".format(res))
+
+# to check whether given string is upper
+print("the string is upper {}".format(res.isupper()))
+str_upp = "HELLO"
+print("the string is upper {}".format(str_upp.isupper()))
+
+# to check whether given string is lower
+print("the string is lower {}".format(res.islower()))
+str_low = "hello"
+print("the string is lower {}".format(str_low.islower()))
+
+# title - it will convert into title
+str_x = "welcome to python"
+tit_str = str_x.title()
+print("the value converting it into title is {}".format(tit_str))
+
+# to check whether it is a title or not
+print("the string is title {}".format(str_x.istitle()))
+print("the string is title {}".format(tit_str.istitle()))
+
+#count
+str_a = "welcome"
+print("the count of w in string a is {}".format(str_a.count("w")))
+print("the count of e in string a is {}".format(str_a.count("e")))
+
+str_x = "Hell0,welcome to class!"
+print("the count of l in str x is {}".format(str_x.count("l")))
+
+#index
+print("index value of w in str x is {}".format(str_x.index("w")))
+print('index value of l in str x is {}'.format(str_x.index("l")))
+
+# strats with
+str_a = "hello"
+print("the string is starting with h is {}".format(str_a.startswith("h")))
+print("the string is starting with i is {}".format(str_a.startswith("i")))
+print("thr string is stating with 0 is {}".format(str_a.startswith("o")))
+
+# ends with
+print("the string is ending with o is {}".format(str_a.endswith("o")))
+print("the string is ending with h is {}".format(str_a.endswith("h")))
+print("the string is ending with i is {}".format(str_a.endswith("l")))
+
+
+
+

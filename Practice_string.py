@@ -208,6 +208,3 @@ print("the string is ending with o is {}".format(str_a.endswith("o")))
 print("the string is ending with h is {}".format(str_a.endswith("h")))
 print("the string is ending with i is {}".format(str_a.endswith("l")))
 
-
-
-

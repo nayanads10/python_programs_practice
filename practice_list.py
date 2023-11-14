@@ -1,6 +1,6 @@
 
 """
-what is string?
+what is list?
 list is a group of elements which can be alphabet,numeric or alpha numeric (or) combination of all 3
 list is mutable
 list is enclosed between []

@@ -11,7 +11,7 @@ Note:list is mutable since it creates extra memory space it is defined
 lst_a = ["a","b",1,3]
 emp_lst = []                                # one kind of defining empty list
 print("one kind of defining empty list is {}".format(emp_lst))
-emp_lst = []                                 # another kind of defining empty list
+emp_lst = list ()                         # another kind of defining empty list
 print("another kind of defining empty list is {}".format(emp_lst))
 
 # to find length of list
@@ -20,6 +20,7 @@ len_lstx = len(lst_x)
 print("length of list x is {}".format(len_lstx))
 
 # to find type
+typ_lst_x = type(lst_x)
 print("the type of the variable is {}".format(type(lst_x)))
 
 lst_y = ["1","2","python",123,"@abc"]
@@ -124,4 +125,59 @@ print("the value of list str d with step 4 is {}".format(slc_with_stp4))
 slc_with_stp3 = lst_d[0:7:3]
 print("the value of list str d with step 3 is {}".format(slc_with_stp3))
 
+lst_a = ["1","2","3","a"]
+lst_a.append(4)
+print("the value of lst_a after appending is {}".format(lst_a))
 
+# item reversing in list
+str_a = "welcome class"                  # output: "emoclew sslac"
+str_a_lst = str_a.split(" ")
+print("the list after splitting the string is {}".format(str_a_lst))
+
+lst_ind0 = str_a_lst[0]
+print(lst_ind0)
+lst_ind1 = str_a_lst[1]
+print(lst_ind1)
+rev_ind0 = lst_ind0[::-1]
+print(rev_ind0)
+rev_ind1 = lst_ind1[::-1]
+print(rev_ind1)
+str_a_lst[0] = rev_ind0
+print(str_a_lst)
+str_a_lst[0] = str_a_lst[0][::-1]
+print(str_a_lst)
+str_a_lst[1] = str_a_lst[1][::-1]
+print(str_a_lst)
+str_a_rev = " ".join(str_a_lst)
+print("the value after reversing items is {}".format(str_a_rev))
+
+lst_x = [1,2,["a","b","python"],3,4]
+lst_x[2][2] = lst_x[2][2][::-1]
+print(lst_x)
+
+#assignment
+lst_z = ["a","b",["john","class","alex"],4,5,7]
+lst_z[2][1] = lst_z[2][1][::-1]
+print(lst_z)
+
+# deleting methods
+#clear - it clears all the elements in the list
+lst_a = [1,2,3]
+lst_a.clear()
+print("list after clearing is {}".format(lst_a))
+
+#pop - it delets last index value
+lstb = ["a","b","c","d"]
+lstb.pop()
+print("the list after pop is {}".format(lstb))
+lstb.pop()
+print("the list after pop is {}".format(lstb))
+lstb.pop()
+print("the list after pop is {}".format(lstb))
+
+# remove - we can specify which item or element to be deleted from list
+lstc = ["john","bob","alex","xyz"]
+lstc.remove("bob")
+print("the value after removing bob from list is {}".format(lstc))
+lstc.remove("john")
+print("the value after removing john from list is {}".format(lstc))

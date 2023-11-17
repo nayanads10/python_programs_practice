@@ -81,5 +81,13 @@ print("the value of slicing tpl y with step 2 is {}".format(slc_with_stp2))
 slc_with_stp3 = tpl_y[0:6:3]
 print("the value of slicing tpl y with step 3 is {}".format(slc_with_stp3))
 
+# index
+tpl_b = ("John", "Alex", "Bob", "xyz")
+ind_bob = tpl_b.index("Bob")
+print("The index value of bob is {}".format(ind_bob))
+
+# count
+cnt_john = tpl_b.count("John")
+print("The count of John in tuple b is {}".format(cnt_john))
 
 

@@ -119,11 +119,11 @@ lst_d = ["#abc",789,"box","1","9","4","3"]
 len_lstd = len(lst_d)
 print(len_lstd)
 slc_with_stp2 = lst_d[0:7:2]
-print("the value of list str d with step size 2 is {}".format(slc_with_stp2))
+print("the value of list lst d with step size 2 is {}".format(slc_with_stp2))
 slc_with_stp4 = lst_d[0:7:4]
-print("the value of list str d with step 4 is {}".format(slc_with_stp4))
+print("the value of list lst d with step 4 is {}".format(slc_with_stp4))
 slc_with_stp3 = lst_d[0:7:3]
-print("the value of list str d with step 3 is {}".format(slc_with_stp3))
+print("the value of list lst d with step 3 is {}".format(slc_with_stp3))
 
 lst_a = ["1","2","3","a"]
 lst_a.append(4)

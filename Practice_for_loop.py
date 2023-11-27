@@ -46,4 +46,4 @@ str_x = "efgh"
 str_y = "klmn"
 for i in str_x:
     for j in str_y:
-        print((i,j))
+        print(i,j)

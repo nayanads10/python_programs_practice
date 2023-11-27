@@ -222,3 +222,13 @@ print("the value after joining list of elements is {}".format(str_b))
 str_c = "john. welcome!"
 str_c_spl = str_c.split(" . ")
 print("the value after splitting strong with . is {}".format(str_c_spl))
+
+
+str_u = "john is clever"
+res = []
+splt_stru = str_u.split(" ")
+print("the string after splitting is {}".format(splt_stru))
+for i in splt_stru:
+   res.append(i[::-1])
+rev_str = " ".join(res)
+print("the rev string is {}".format(rev_str))

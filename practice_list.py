@@ -224,3 +224,4 @@ cnt_a = lstm.count("a")
 print("The count of a in lstm is {}".format(cnt_a))
 cnt_c = lstm.count("c")
 print("the count of c in lstm is {}".format(cnt_c))
+

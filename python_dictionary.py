@@ -81,7 +81,7 @@ print("the list of values of car details are {}".format(val_dict))
 item_car_det = list(car_details.items())
 print("The items of car details are {}".format(item_car_det))
 
-# clear - it deletes all the items ot key value pair of dictionary
+# clear - it deletes all the items of key value pair of dictionary
 dict_a = {"name": "John", "Age": 25}
 dict_a.clear()
 print("the value after clearing items {}".format(dict_a))

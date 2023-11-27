@@ -16,7 +16,7 @@ list:
 * list is ordered collection
 * list have duplicate 
 * Existing item of list can be changed
-* list is slow compared compared to set (if we fetch an item from list it iterates through all the index)
+* list is slow compared to set (if we fetch an item from list it iterates through all the index)
 
 Sets: 
 * set is unordered collection

@@ -69,6 +69,7 @@ for i in splt_stra:
 rev_str = " ".join(res)
 print("the rev string is {}".format(rev_str))
 
+
 # list comprehension
 str_a = "John is clever"
 res_lst = [i[::-1] for i in str_a.split(" ")]         # list comprehension

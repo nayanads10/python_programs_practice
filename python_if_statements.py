@@ -122,11 +122,6 @@
 #print("the maximum value is {}".format(lst_c[-1]))
 #print("The minimum value is {}".format(lst_c[0]))
 
-#num = int(input("enter the number:"))
-#fact = 1
-#for i in range(1, num+1):
-#    fact = fact*i
-#    print("factorial number is {}".format(fact))
 
 # factorial
 #n= int(input("Enter the value: "))
@@ -160,4 +155,9 @@
 #        negative_numbers.append(num)
 #print("positive numbers:", positive_numbers)
 #print("negative numbers:", negative_numbers)
+
+
+
+
+
 

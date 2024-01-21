@@ -1,7 +1,7 @@
 """
 What is Lambda?
 A Lambda function is a small anonymous function.
-It can have any umber of arguments, but can only have one expression
+It can have any number of arguments, but can only have one expression
 """
 
 x = lambda a: a+20

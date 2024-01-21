@@ -87,6 +87,7 @@ print("the third index of lst_c is {}".format(ind_lstc))
 ind_lstc = lst_c[4]
 print("the fourth index of lst_c is {}".format(ind_lstc))
 
+lst_c = ["#abc",789,"box","1","9"]
 # to print x from box which as item of lst_c
 lst_box = lst_c[2]
 print("the value is {}".format(lst_box))

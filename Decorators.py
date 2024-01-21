@@ -31,3 +31,43 @@ def cub_num(func):
 def number():
     return 30
 print(number())
+
+def acceleration(func):
+    def inner_method(*args, **kwargs):
+        vel = func(*args, **kwargs)
+        time = args[1]
+        acce = vel/time
+        return acce
+    return inner_method
+@acceleration
+def velocity(dis, time):
+    vel = dis/time
+    return vel
+print(velocity(100, 60))
+
+
+def mult_three(func):
+    def wrapper(*args, **kwargs):
+        summ = func(*args, **kwargs)
+        res = summ*3
+        return res
+    return wrapper
+@mult_three
+def summation(a, b, c=2, d= 4):
+    sum_abcd = a+b+c+d
+    return sum_abcd
+print(summation(5,7, c=5, d=10))
+
+def density (func):
+    def inner_method(*args,**kwargs):
+        mass = func(*args,**kwargs)
+        volume = args[1]
+        density = mass/volume
+        return density
+    return inner_method
+@density
+def volume(density,volume):
+    volume = density/volume
+    return volume
+print(volume(100,50))
+

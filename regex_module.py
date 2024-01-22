@@ -88,7 +88,13 @@ print(x)
 txt_a = "The Floods In Chennai"               #followed excactly 3 (any) characters
 x = re.findall("Fl.{3}s", txt_a)
 print(x)
-
+txt_a = "The Floods In Chennai"
+x = re.findall("Ch....*i",txt_a)
+print(x)
+x = re.findall("Ch....+i",txt_a)
+print(x)
+x = re.findall("Ch....?i",txt_a)
+print(x)
 
 x = re.findall("water|flows", txt_a)     #It will wether string contains either or OR
 if x:
@@ -101,6 +107,99 @@ if x:
 else:
     print("match unsuccessful")
 
+txt_b = "The rever is flowing"
+x = re.findall("\AThe", txt_b)
+print(x)
+if x:
+  print("match successful")
+else:
+  print("match unsuccessful")
+
+txt = "The rever is flowing"
+x = re.findall("\d", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match")
+else:
+  print("No match")
+
+txt = "The rever is flowing"
+x = re.findall("\D", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match")
+else:
+  print("No match")
+
+txt = "The rever is flowing"
+x = re.findall("\s", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match")
+else:
+  print("No match")
+
+txt = "The rever is flowing"
+x = re.findall("\S", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match")
+else:
+  print("No match")
 
 
+txt = "The rever is flowing_1 time More"
+x = re.findall("\w", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match")
+else:
+  print("No match")
+
+txt = "The rever is flowing_1 time More"
+x = re.findall("\W", txt)
+print(x)
+if x:
+  print("Yes, there is at least one match")
+else:
+  print("No match")
+
+txt = ("The rever is flowing")
+x = re.findall("flowing\Z", txt)
+print(x)
+if x:
+  print("Yes, there is a match")
+else:
+  print("No match")
+
+
+txt = "The apple is red in colour"                   # starts with
+x = re.findall(r"\bour", txt)
+print(x)
+if x:
+  print("match successful")
+else:
+  print("match unsuccessful")
+
+txt = "The apple is red in colour"                  #ends with
+x = re.findall(r"our\b", txt)
+print(x)
+if x:
+  print("match successful")
+else:
+  print("match unsuccessful")
+
+x = re.findall(r"\Bour", txt)
+print(x)
+if x:
+  print("match successful")
+else:
+  print("match unsuccessful")
+
+x = re.findall(r"our\B", txt)
+print(x)
+if x:
+  print("match successful")
+else:
+  print("match unsuccessful")
 

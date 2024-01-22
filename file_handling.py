@@ -27,5 +27,5 @@ with open("Original.txt", "w") as f:
     f.write("welcome to home"+"\n")
     f.write("home filled with joy"+"\n")
 file = open("original_to_write.txt", "w")
-file.write("Nayana holds an book")
+file.write("Nayana holds  book")
 file.close()
